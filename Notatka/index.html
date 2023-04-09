@@ -1,0 +1,495 @@
+<!-- **HTML**
+
+1. ***HTML - wprowadzenie.***
+    - World Wide Web Consortium - [https://www.w3.org/](https://www.w3.org/)
+    - Budowa tagów w HTML - tag otwierający, zawartość, tag zamykający
+        - <p>Cześć!</p>
+        - <img src=”obrazek.jpg” alt=”Opis obrazka”>
+    - Pozostałe informacje:
+        - Tagi tak jak wszystko w kodzie zapisujemy małymi literami.
+        - HTML nie robi z nas programistów!
+        - HTML odpowiada za treść strony WWW.
+2. ***Podstawowa struktura HTML.***
+    - Aby stworzyć strukturę strony należy najpierw klinkąć ‘!’ a później enter.
+    - Podstawowe tagi/podstawowa struktura w HTML.
+    <html>
+        <head></head>
+        <body>
+        </body>
+    </html>
+    
+    - <title>*tytuł strony*</title>
+3. ***Semantyka i najczęściej używane tagi HTML.***
+    - Najczęściej używane tagi HTML:
+        - <html> - Najważniejszy tag w całej strukturze.
+        - <head> - Umieszczamy w nim “rzeczy dla maszyn”.
+        - <body> - Umieszczamy w nim treść, którą widzi użytkownik strony.
+        - <div> - Kontener, w którym możemy umieścić wszystko.
+        - <p> - Paragraf, umieszczamy w nim tekst.
+        - <h1 - h6> - Nagłówki; h1- największy i najważniejszy nagłówek, h6 - najmniejszy i najmniej ważny nagłówek.
+        - <img> - Umieszczamy w nim obrazy.
+        - <a> - Umieszczamy w nim linki.
+    - Semantyka:
+        - Semantyka dla deweloperów:
+            - Czysty i przejrzysty kod.
+            - Zielone światło/czerwone światło.
+            - Stosowanie się do zasad semantyki dobrze o nas świadczy.
+        - Semantyka dla osób niewidomych lub mających problemy ze wzrokiem:
+            - Ułatwiamy korzystanie ze stron osobom, które mają problemy ze wzrokiem
+            - [https://www.youtube.com/watch?v=dEbl5jvLKGQ](https://www.youtube.com/watch?v=dEbl5jvLKGQ) *WAŻNE*
+        - Semantyka dla innych programistów:
+            - Jeden standard pisania kodu.
+        - Semantyka dla SEO:
+            - Wyszkukiwarki lepiej dopaują treść.
+            - Nasza strona będzie wyżej notowana, więcej osób ją odwiedzi.
+4. **/*Kod do kolejnych odcinków*/**
+5. ***Elementy blokowie i liniowe.***
+    - Elementy blokowe:
+        - <div>
+        - <p>
+    - Elementy liniowe:
+        - <span>
+6. ***Nagłówki.***
+    - Rodzaje nagłówków:
+        - <h1> - największy i najważniejszy
+        - <h2>
+        - <h3>
+        - <h4>
+        - <h5>
+        - <h6> - najmniejszy i najmniej ważny
+    - Nagłówek h1 powinien być jeden na stronę/podstronę/sekcję.
+7. ***Linki.***
+    - Aby utworzyć link należy wpisać a, w atrybucie href podaje się link, a pomiędzy tagami nazwę linku.
+    - Przykład: <a href="[http://127.0.0.1:5500/index.html](http://127.0.0.1:5500/index.html)">Link do mojej strony</a>
+    - Aby link otworzył się w następnej karcie, należy po linku dodać atrybut target i do niego dodać _blank.
+    - Przykład: <a href="[http://127.0.0.1:5500/index.html](http://127.0.0.1:5500/index.html)" target=”_blank”>Link do mojej strony</a>
+    - Aby link jako kolejny otworzył się na wcześniej otwartej karcie trzeba z target=”_blank” usunąć ‘_’.
+8. ***Podstawowa struktura strony.***
+    - Podstawowa struktura strony:
+        - <header>
+        - <nav>
+        - <main>
+            - <section>
+        - <aside>
+        - <footer>
+    - Tag <main> jest tylko jeden na stronie.
+9. ***Metatagi.***
+    - Metatagi zawsze są umieszczane w sekcji <head>.
+    - Metatag <meta charset=”UTF-8” /> powinien być zawsze na górze.
+    - Metatag <meta name="viewport" content="width=device-width, initial-scale=1.0" /> jest niezwykle ważny, ponieważ odpowiada za poprawne wyświetlanie naszej stronu na urządzeniach mobilnych.
+    - W metatagu <meta name="author" content="" /> podaje się imię i nazwisko autora strony.
+    - W metatagu <meta name="keywords" content="" /> podaje się słowa kluczowe opisujące naszą stronę.
+    - W metatagu <meta name="description" content="" /> podaje się opis naszej strony, to o czym ona jest.
+10. ***Formularze.***
+    - Aby utworzyć przycisk należy wpisać tag <button>.
+        - Przykład: <button>Kliknij mnie!</button>.
+    - Aby “wyszarzyć” przycisk należy w tagu <button> wpisać słowo ‘disabled’.
+    - Aby utworzyć formularz należy wpisać tag <form>.
+    - Wnętrze formularza:
+        - Tag <label> służy do opisania naszego inputa, aby go utworzyć należy wpisać label.
+            - Przykład: <label for="">Imię:</label>
+        - Aby utworzyć miejsce na tekst należy wpisać tag <input>, automatycznie przyjmie on atrybut “text”.
+            - Przykład: <input type="text">
+        - Tag <textarea> służy do utowrzenia przestrzeni, w której może zmieścić się więcej wiadomości niż w <input>.
+            - Przykład: <textarea name="" id="" cols="30" rows="10"></textarea>
+    - Aby stworzyć rozwijalne menu należy wpisać tag <select>.
+    - Wnętrze selecta:
+        - Aby utworzyć jedną z opcji rozwijalnego menu należy wpisać tag <option>, a w jego wnętrzu podać nazwę opcji, która ma być dodana. Aby zablokować jedną z opcji należy dodać atrybut ‘disabled’.
+            - Przykład: <option value="">Czarny</option>
+    - Wybrane przykłady inputów:
+        - <input type="text"> - służy do wpisywania tekstu.
+        - <input type="checkbox"> - służy do zaznaczania/odznaczania pola. Jeżeli chcemy żeby było od początku zaznaczone to należy podać atrybut checked.
+        - <input type="radio"> - okrągły chceckbox, nie da się go odhaczyć.
+        - <input type="color"> - pole z kolorem.
+        - <input type="date"> - data.
+        - <input type="password"> - wykropkowany input z tekstem.
+11. ***Formatowanie i zabawa z tekstem.***
+    - Tag <br> pełni funkcję klawisza “Enter”.
+    - Tagi <del> i <s> służą do umieszczania przekreślonego tekstu.
+    - Tagi <b> i <strong> służą do pogrubiania umieszczanego tekstu, powinno używać się tagu <strong>, ponieważ podnosi on wartość semantyczną strony.
+    - Tagi <i> i <em> służą do pisanie tekstu kursywą, powinno używać się tagu <em>, ponieważ podnosi on wartość semantyczną strony.
+    - Tag <u> służy do pisania podkreślonego tekstu.
+    - Tag <mark> służy do zaznaczania kolorem wybranych informacji w tekście.
+    - Tag <sup> służy do pisania informacji w indeksie górnym.
+    - Tag <sub> służy do pisania informacji w indeksie dolnym.
+    - Tag <pre> służy do pisanie tekstu inną czcionką, nie ignoruje białych znaków.
+    - Jeżeli chcemy żeby w paragrafie pomiędzy dwoma słowami była więcej niż jedna spacja to pomiędzy dwoma znakami należy wpisać “&nbsp”.
+    - Zastosowanie:
+        - <strong>, <em> - semantyka.
+        - <b>, <i>, <u> - CSS.
+12. **/*Informacja do list w HTML*/*.***
+13. ***Listy w HTML.***
+    - <ol> - ordered list, czyli lista uporządkowana z numerkami.
+    - <ul> - unordered list, czyli lista nieuporządkowana.
+    - Aby dodać element do listy należy użyć tagu <li>.
+    - ul>li*5>{Element nr $} - przykładowe zagnieżdżenie.
+14. **/*Kod o tabelach*/**
+15. ***Tabele w HTML.***
+    - Aby utworzyć tabelę należy wpisać tag <table>.
+    - Tag <tr> służy do tworzenia rzędów.
+    - Tag <td> służy do tworzenia kolumn, aby rozszerzyć kolumnę na dół/na górę należy do niej dodać atrybut rowspan=”” i wpisać w nim wartość na ile ma zostać rozszerzona kolumna, aby rozszerzyć kolumnę w prawo/w lewo należy do niej dodać atrybut colspan=”” i wpisać w nim wartość na ile ma zostać rozszerzona kolumna.
+    - Tag <th> służy do tworzenia nagłówków.
+    - Przykład tabeli:
+    
+    <table>
+        <tr>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
+        </tr>
+        <tr>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
+        </tr>
+    </table>
+    
+    - Przykład profesjonalnej tabeli:
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Danie</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kotlet schabowy</td>
+                <td>15 zł</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Suma</td>
+                <td>20zł</td>
+            </tr>
+        </foot>
+    </table>
+    
+16. ***Audio, video, obrazki.***
+    - Tag <audio> służy do umieszczania plików dźwiękowych na stronie.
+        - Przykład: <audio src="Save As.mp3" controls></audio>
+    - Tag <video> słyży do umieszczania filmów na stronie.
+        - Przykład: <video src="Drapacze Chmur.mp4" controls></video>
+        
+        <style>
+            video {
+                width: 300px;
+            }
+        </style>
+        
+    - Aby umieścić na stronie film z YouTube należy wykonać następujące kroki: Udostępnij → Umieść → Kopiuj → Wklejenie skopiowanego kodu.
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/McOl2foerNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    - Tag <img> służy do umieszczania obrazków na stronie.
+        - Przykład: <img src="Mountains.jpg" alt="">
+        - Atrybut alt=”” służy do umieszczania opisu obrazka, aby osoby korzystające z czytników ekranu mogły się dowiedzieć co jest przedstawione na zdjęciu.
+        
+        img {
+            width: 500px;
+        }
+        
+    - Aby umieścić na stronie obrazek bez wcześniejszego pobierania, należy w tagu <img> umieścić link do tego obrazka.
+        - Przykład: <img src="[https://cdn.pixabay.com/photo/2020/09/24/16/50/board-5599231_960_720.png](https://cdn.pixabay.com/photo/2020/09/24/16/50/board-5599231_960_720.png)" alt="">
+17. ***DOCTYPE & HTML lang.***
+    - DOCTYPE jest niezbędny.
+    - Tag <html lang=””> informuje w jakim języku napisana jest strona.
+        - Tworząc polskie strony powinno się w atrybucie lang=”” wpisać “pl”.
+
+**CSS**
+
+1. ***CSS - wprowadzenie.***
+    - Czym jest CSS:
+        - CSS tworzy/modyfikuje wygląd stron WWW.
+        - CSS nie jest językiem programowania.
+    - Budowa CSS:
+        - Dyrektywa (reguła) składa się z:
+            - Selektora (nazwa tagu HTML / .class / #ID)
+            - Właściwości (np. color / font-size / padding / position)
+            - Wartości (np. yellow / 16px)
+            
+            p {
+                color: blue;
+                font-size:30px;
+            }
+            
+    - Klasy:
+        - Nazwę klasy wymyślamy sami (klasa musi być po angielsku).
+        - Tę samą klasę możemy dodać do wielu tagów HTML.
+        - W CSS do klasy odwołujemy się za pomocą kropki.
+        - Możemy umieścić kilka klas w jednym elemencie.
+        
+        Przykład:
+        .main{}
+
+        <div class="main info top"></div>
+        <div class="main info bottom"></div>
+        
+    - ID:
+        - Nazwę ID wymyślamy sami (klasa musi być po angielsku).
+        - ID tylko jedno na stronę.
+        - W CSS do ID odwołujemy się za pomocą hasha.
+        - Nie stylujemy za pomocą ID.
+        
+        #main{}
+        <div id="main"></div>
+        <p id="main2"></p>
+        
+    - ID & klasy:
+        - Jeśli chcemy, możemy dodać ID oraz klasy w tym samym tagu HTML.
+        - ID możemy nazwać tak samo jak klasę. To są dwie różne rzeczy.
+    - Uniwersalny selektor:
+        - ‘*’ to uniwersalny selektor w CSS.
+        
+        *{
+            color: red;
+            fort-size: 30px;
+        }
+        
+2. **Gdzie umieścić CSS?**
+    - W zewnętrznym pliku CSS.
+        - Przykład: <link rel="stylesheet" href="./css/style.css" />
+    - W tagach <style><style>.
+        - Przykład:
+        
+        <style>
+            p{
+                font-size: 10px;
+            }
+        </style>
+        
+    - Liniowo.
+        - Powinno się ich unikać.
+        - Przykład:
+        
+        <p style="color: gold">Lorem ipsum</p>
+        <p style="color: silver">Lorem ipsum</p>
+        <p style="color: brown">Lorem ipsum</p>
+        
+3. **Ścieżki do plików.**
+    - Prawidłowe umieszczenie pliku na stronie:
+    
+    <img src="./img/cars/car.jpg" alt="">
+    <img src="./img/bikes/bike.jpg" alt="">
+    
+4. **Emmet.**
+    - Link do kursu: [https://www.udemy.com/course/pisz-szybszy-i-wydajniejszy-kod-html-i-css/learn/lecture/16655904?start=0#overview](https://www.udemy.com/course/pisz-szybszy-i-wydajniejszy-kod-html-i-css/learn/lecture/16655904?start=0#overview)
+5. **Zadanie  - napraw CSS!**
+6. **Rozwiązanie zadania - napraw CSS!**
+7. **Krótszy zapis i komentarze.**
+    
+    div, p, span{
+        font-size: 60px;
+        color: #fff;
+    }
+    
+8. **!important oraz dobra praktyka nazywania klas.**
+    - Klasy nazywa się po angielsku.
+    - Wyraz “!important” daje priorytet linijce, w której jest zapisany.
+    - “!important” powinno się unikać, może służyć jako koło ratunkowe w ostateczności.
+9. **Wprowadzenie do zadania - ostyluj stronę według wytycznych.**
+10. **Treść zadania - ostyluj stronę według wytycznych.**
+    - Aby wyśrodkować tekst należy w CSS wpisać “text-align: center;”
+    - Aby podkreślić tekst należy w CSS wpisać “text-decoration: underline;”
+11. **Rozwiązanie zadania - ostyluj stronę według wytycznych.**
+12. **Google Fonts.**
+    - [https://fonts.google.com/?category=Sans+Serif,Display,Handwriting,Monospace&subset=latin-ext&preview.text=TO jest to&preview.text_type=custom](https://fonts.google.com/?category=Sans+Serif,Display,Handwriting,Monospace&subset=latin-ext&preview.text=TO%20jest%20to&preview.text_type=custom)
+    - Nasza strona powinna mieć 3 style, najlepiej żeby miała: Thin 100, Regular 400, Bold 700.
+    - Aby zaimportować czcionkę do naszej strony należy skopiować link i wkleić go do sekcji “head”, najlepiej przed stylami CSS. Następnie należy skopiować regułę CSS i wkleić ją do body w CSS.
+13. **Font Awesome.**
+    - [https://fontawesome.com/](https://fontawesome.com/)
+    - Aby dodać ikonkę na stronę należy skopiować tag <script> i wkleić go do sekcji head, następnie w sekcji body należy wkleić kod ze strony, na której jest ikonka, którą chcemy umieścić.
+14. **Alternatywy dla Font Awesome.**
+    - [https://feathericons.com/](https://feathericons.com/)
+    - [https://tabler-icons.io/](https://tabler-icons.io/)
+15. **Stylowanie tekstu.**
+    - text-align: right; służy do przesuwania tekstu do prawej krawędzi, można go użyć również aby przesunąć tekst do lewej krawędzi lub na środek.
+    - text-align: justify; rozciąga cały tekst od lewej do prawej krawędzi ekranu.
+    - Aby usunąć podkreślenie linku należy w CSS wpisać text-decoration: none;
+    - Aby w CSS zapisać tekst wielkimi literami należy wpisać text-transform: uppercase;
+    - Aby w CSS zapisać tekst małymi literami należy wpisać text-transform: lowercase;
+    - Aby w CSS zapisać tekst, w którym każdy nowy wyraz zaczyna się wielką literą należy wpisać text-transform: capitalize;
+    - Aby w CSS zwiększyć odstęp między pojedynczymi literami należy użyć letter-spacing: 2px;
+    - Aby w CSS zwiększyć odstęp między każdym wyrazem należy wpisać word-spacing: 5px;
+    - Aby w CSS zwiększyć odstęp między liniami należy wpisać line-height: 100px;
+    - Aby w CSS użyć margines należy wpisać margin-top: 30px;
+    - Jeśli ustawimy sobie wysokość i szerokość linii na tą samą wartość to tekst się wyśrodkuje [height == line-height].
+    - direction: ltr; sprawia, że tekst będzie wyświetlany od lewej do prawej, rtl sprawi, że tekst będzie wyświetlany od prawej do lewej.
+    - text-shadow: 5px 5px 5px #000 służy do utworzenia cienia w naszym tekście. Pierwsze 5px oznacza, że tekst będzie przesunięty o 5px na osi x, drugi na osi y, a trzeci oznacza, że rozmycie będzie miało 5px
+    - [https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/16598048#content](https://www.udemy.com/course/od-zera-do-front-end-developera-cz1/learn/lecture/16598048#content)
+16. **Kolory.**
+    - Wyśrodkowanie tekstu.
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    - [https://www.quackit.com/css/color/charts/css_color_names_chart.cfm](https://www.quackit.com/css/color/charts/css_color_names_chart.cfm)
+    - Sposoby umieszczania kolorów:
+        - Nazwy kolorów.
+        - RGB (0 - 255)
+        - HSL (hue, saturation, lightness)
+        - HEX (#RGB)
+    - Dodatek ‘a’ służy do opisywania przezroczystości.
+        - Przykład: rgba(0, 0, 0, 0.5)
+17. **Obrazki.**
+    - Procenty umieszczane w wysokości/szerokości zawsze odnoszą się do rodzica.
+    - Aby zaokrąglić rogi naszego obrazka należy użyć border-radius: 25px;
+    - Aby zrobić z obrazka kulę należy użyć border-radius: 50%;
+    - opacity służy do opisywania przezroczystości obrazka.
+        - Przykład: opacity: 0.5;
+    - filter służy do edycji obrazka, potrafi na przykład rozmazać obrazek albo odwrócić jego kolory. Nie powinno się jednak z niej korzystać. 
+18. Px, %, vw, vh
+    - Procenty odnoszą się do szerokosci rodzica: 99% przypadków
+    - Jeżeli mamy ustawioną wysokość danego elementu i odwołujemy się do wysokości w %, to % odnoszą się do wysokości
+    - v w nazwach vh i vw to viewport, obliczane są na podstawie osi x, y
+    - viewport to to co widzimy w przeglądarce
+19. Rem & em
+    - Aby zmienić domyślną wartośc jakiegoś elementu na stronie trzeba w CSS odwołać się do HTML i zmienić w nim wartość, którą chcemy docelowo zmienić.
+        - html {
+            font-size: 10px;
+        }
+    - Rem-y odwołują się do wartości domyślnej i zmieniają na jej podstawie elementy
+        - p {
+            font.size: 2.4rem; - czcionka powiększona 2.2 razy
+            font.size: 3.3rem; - czcionka powiększona 3.3 rozy
+        }
+    - font.size: 62.5%: rozmiar czcionki ustawiony na 10
+    - Rem-y odnoszą się do tego co zapisujemy w html w CSS
+    - Em-y odnoszą się do rodzica, czyli np. do klasy
+20. Max/min-width & max/min-height
+    - Przykłądowy kwadrat
+        - .box {
+            width: 500px;
+        height: 500px;
+        background-color: rgba(24, 69, 219, 0.466);
+        }
+        - <div class="box"></div>
+    - max-width: 500px; width: 100%; - ustawia maksymalną wartość szerokości na 500px, kiedy strony się kurczy, to zajmuje 100% szerokosci rodzica 
+    - min-width: 500px; width: 100% - ustawia minimalną wartość serokości na 500px, kiedy strony się kurczy, wyskakuje pasek do przewijania
+    - Przykład:
+        .box {
+            max-width: 600px;
+            min-width: 400px;
+            width: 100%;
+        } - przy rozciąganiu element nie będzie miał mniej niż 400 pikseli, kiedy dojdzeimy do wartości 400 to będzie zajmował 100& szerokosci rodzica, a po dojściu do wartości 600 dalej nie będzie rósł
+21. Specyficzność w CSS
+    - inline: 1000 pkt
+    - ID: 100 pkt
+    - klasa: 10 pkt
+    - tag HTML: 1 pkt
+    - Im więcej zagnieżdżeń tagów HTML, tym więcej punktów i tym jest to ważniejsze dla  przeglądarki, jednak nawet 1000 zagnieżdżeń tagów nie przebije klasy 
+    - !important potrafi przebić nawet inline
+22. Kaskadowość i dziedziczenie
+    - Przeglądarka czyta cały kod od góry do dołu
+    - Nasze style CSS powinny być na samym dole
+23. Kombinatory
+    - <hr> - tworzy linię
+    - Przykład:
+        - div > p{
+
+        } - odwołanie się do bezpośrednich dzieci diva
+        - div + p{
+
+        } - bezpośredni brat diva
+        - div ~ p {
+
+        } - odwołanie się do braci diva
+24. Box model
+    -  Padding służy do stwarzania przestrzeni dla tekstu i innej zawartości.
+    - Border-box nadaje wymiary elementom
+    - Na początku w CSS należy nadać wszystkim elementom borde-box: box-sizing: border-box;
+25. Margin i padding
+    - Marginesy góra-dół się ze soba nie sumują.
+    - Instrukcja display: inline-block; układa elemenry obok siebie.
+    - Marginesy po bokach się sumują.
+    - Jeżeli elementy są oddzieolne od siebie to dodaje się dzięki nimi margines.
+    - Zapis padding: 20px 30px; oznacza, że padding góra-dół będzie wynosił 20px a padding prawo-lewo będzie wynosił 30px.
+    - Padding przyjmujący cztery wartości: top, right, bottom, left; zgodnie z ruchem wskazówek zegara
+    - Padding przyjmujący trzy wartości: top, left-right, bottom
+26. Overflow
+    - overflow: visible; - jeżeli coś wycieka za kontener to jest to widoczne
+    - overflow: hidden; - jeżeli coś wycieka za kontener to jest ucinane
+    - overflow: auto; - jeżeli coś wyciaka poza kontener, to pojawia się pasek do do przeciągania po prawej stronie
+    - overflow: scroll; - pojawai się pasek do przewijania na dole
+27. Border 
+    - border dodaje obramowanie do naszego elementu
+    - solid dodaje nieprzerywane kreski
+    - dashed dodaje przerywane kreski
+    - dotted dodaje kropki
+    - zapis border-bottom-right-radius zaokrągla tylko prawą dolną krawędź
+28. Stylowanie linków
+    - Aby link nie miał podkreślenia należy napisać przy nim w CSS text-decoration: none;
+    - Do pseudoklas odwołujemy się za pomocą dwukropka.
+    - a:link {
+        color: lime
+    } - link, który nie został odwiedzony przyjmie kolor lime
+    - a:visited {
+        color: tomato;
+    } - odwiedzony libk ma kolor tomato
+    - a:hover {
+        color: royalblue;
+    } - jeżeli najedzie się na link przyjmie on kolor royalblue
+    - a:active {
+        background-color: gold
+    } - jeżeli najedzie się i kliknie na link bez jego puszczenia, to przyjmie on kolor złoty
+    - wszystkie te właściwości muszą być napisane w tej dokładnie kolejności
+29. Stylowanie przycisków i :hover
+    - aby przycisk nie miał obramowania, należy dodać właściwość border: none
+    - aby zmienił sie kursor po najechaniu na przycisk należy napisać cursor: pointer;
+    - aby działania na przycsiku działy się po pewnym upływie czasu, należy skorzystać z instrukcji transition:  i wpisać czas, po którym ma nastąpić anmimacja 
+30. Display inline, inline-block oraz block
+    - w elemencie liniowym nie ma możliwości ustawienia u niego wysokości ani szerokości, wyjątkiem jest tag img
+    - aby zmienić element liniowy na element blokowy naależy napisać display: block;
+    - aby zmienić elemenrt blokowy na element liniowy należy napisać display: inline
+    - display: inline-block; łączy ze sobą właściwości elementów liniowych i blokowych
+31. Position relative i z-index
+    - position relative wyrywa tylko z warstwy wizualnej
+    - każdy element na stronie ma wartość static
+    - przykładowy kod :
+        main {
+            margin-top: 200px;
+        }
+        div {
+            margin: 0 auto;
+            height: 200px;
+            width: 600px;
+            border: 3px solid black
+        }
+        .red {
+            background-color: tomato;
+        }
+        .blue {
+            postition: relative;
+            top: -100px;
+            left: 50px;
+            margin: 20px auto;
+            background-color: royalblue
+        }
+        .green {
+            background-color: greenyellow
+        }
+    - oś Z: efekt głębi
+        - przykład: z-index: -100;
+        - UWAGA!!! Musi zostać użyte position: relative, aby zadziałało
+32. Position absolute
+    - position absolute wyrywa z warstwy wizualnej i struktury strony
+    - position absolute pozycjonuje się względem okna przeglądarki chyba, że rodzic ma inne position niż static
+33. Notatka z position relative i position absolute
+    
+    Position relative:
+    - wyciąga element z warstwy wizualnej,
+    - nie wyciąga elementu ze struktury strony,
+    - pozycjonujemy element względem jego oryginalnego położenia.
+
+    Position absolute:
+    - wyciąga element z warstwy wizualnej,
+    - wyciąga element ze struktury strony,
+    - pozycjonuje się względem rodzica, który ma position inny, niż domyślny static,
+    - jeśli żaden rodzic, dziadek, pradziadek nie ma innego position niż static, wtedy element pozycjonuje się względem okna przeglądarki.
+34. Position fixed
+    - position: fixed wyciąga z warstwy wizualnej i ze struktury strony oraz przykleja element do strony
+35. Position sticky
+    - position: sticky po przekroczeniu odpowiedniej odległości przykleja się do ekranu i działa jak position: fixed
+    - position: sticky działa tylko w obrębie rodzica
+-->

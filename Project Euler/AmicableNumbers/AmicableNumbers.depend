@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1676651389 source:c:\users\szymek\documents\python - project euler\amicablenumbers\main.cpp
+	<iostream>
+	<vector>
+	<numeric>
+	<set>
+
